@@ -1,151 +1,133 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Reviply – Stand NFC para reseñas</title>
-  <meta name="description" content="Stand NFC de PVC con chip NTAG213. Toca y abre el enlace de reseñas de Google. Envío 24/48 h. Precio 19 €." />
-  <link rel="icon" href="assets/img/fav.svg">
-  <meta property="og:title" content="Reviply – Stand NFC para reseñas" />
-  <meta property="og:description" content="Stand NFC de PVC con chip NTAG213. Toca y abre el enlace de reseñas de Google. Envío 24/48 h. Precio 19 €." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/img/foto-2-producto-frontal.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="assets/img/foto-2-producto-frontal.png" />
-  <link rel="stylesheet" href="styles/styles.css">
-  <script defer src="scripts/script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stand NFC para reseñas en Google - Reviply</title>
+  <meta name="description" content="Stand NFC en PVC con chip NTAG213 para reseñas en Google. Compatible con iPhone 7+ y Android con NFC. Envío 24/48h desde España. Precio: 19€ con envío incluido.">
+  <link rel="stylesheet" href="/styles/styles.css">
 </head>
 <body>
-  <div class="topbar"><div class="wrap topbar-inner"><span data-i18n="topbar">Envío gratis · Pago seguro con Stripe</span></div></div>
-  <header class="nav"><div class="wrap nav-inner">
-    <a href="#" aria-label="Inicio"><strong>LOGO</strong></a>
-    <nav class="menu" aria-label="Primary">
-      <a href="#how" data-i18n="nav_benefits">Cómo funciona</a>
-      <a href="#details" data-i18n="nav_details">Detalles</a>
-      <a href="#support" data-i18n="nav_support">Atención</a>
-      <a href="#faq" data-i18n="nav_faq">FAQ</a>
-    </nav>
-    <div class="lang" aria-label="Language">
-      <button type="button" data-lang="es" class="active" aria-pressed="true" data-i18n="lang_es">ES</button>
-      <button type="button" data-lang="en" aria-pressed="false" data-i18n="lang_en">EN</button>
-    </div>
-  </div></header>
+  <!-- Barra superior -->
+  <div class="top-bar">
+    <span>Envío gratis · Pago seguro con Stripe</span>
+  </div>
 
-  <section class="wrap hero" id="home">
-    <span class="badge" data-i18n="hero_badge">Stand NFC</span>
-    <div class="hero-grid">
-      <div>
-        <h1 class="h1" data-i18n="hero_title">Stand NFC para reseñas en Google</h1>
-        <p class="lead" data-i18n="hero_sub">Acerca el móvil y se abre tu enlace de reseñas.</p>
-        <div class="chiprow" aria-hidden="true">
-          <span class="chip">PVC</span><span class="chip">NTAG213</span><span class="chip">24/48 h</span><span class="chip">2 años garantía</span>
-        </div>
-        <div class="cta">
-          <a class="btn btn-primary" data-checkout data-i18n="cta_buy" href="#">Comprar ahora</a>
-          <a class="btn btn-ghost" data-whatsapp data-i18n="cta_whatsapp" href="#" target="_blank" rel="noopener">Hablar por WhatsApp</a>
-        </div>
-        <div class="small" style="margin-top:10px"><strong data-i18n="price_label">Precio</strong>: <span data-i18n="price_value">19 €</span> · <span data-i18n="avail">Disponibilidad inmediata</span></div>
-      </div>
-      <aside class="hero-card">
-        <img src="assets/img/foto-2-producto-frontal.png" alt="Producto vista frontal" width="600" height="900" loading="lazy">
-        <div class="small" style="margin-top:10px" data-i18n="includes">Incluye: stand, guía rápida, soporte por WhatsApp.</div>
-      </aside>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">LOGO</div>
+    <div class="lang-switch">
+      <button onclick="setLang('es')">ES</button> | 
+      <button onclick="setLang('en')">EN</button>
     </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1 data-i18n="hero_title">Stand NFC para reseñas en Google</h1>
+    <p data-i18n="hero_subtitle">Acerca el móvil y se abre tu enlace de reseñas.</p>
+    <p class="price">Precio: 19 €</p>
+    <div class="hero-cta">
+      <a href="[STRIPE_PAYMENT_LINK]" class="btn primary" data-i18n="buy_now">Comprar ahora</a>
+      <a href="https://wa.me/34690232999?text=Hola!%20Me%20interesa%20el%20stand%20NFC%20🙌%20Voy%20a%20poner%20a%20prueba%20vuestro%20récord%20de%20respuesta%20de%202%20minutos%20😉" class="btn secondary" target="_blank">Hablar por WhatsApp</a>
+    </div>
+    <img src="/assets/img/hero-producto.jpg" alt="Foto frontal del stand NFC" loading="lazy">
   </section>
 
-  <div class="trustbar"><div class="wrap trust-inner"><span data-i18n="trust">Pago seguro con Stripe · Envío 24/48 h · Garantía 2 años</span></div></div>
+  <!-- Barra de confianza -->
+  <section class="trust-bar">
+    <span>Pago seguro con Stripe · Envío 24/48 h · Garantía 2 años</span>
+  </section>
 
-  <section class="wrap section" id="how">
-    <h2 data-i18n="how_title">Cómo funciona</h2>
+  <!-- Cómo funciona -->
+  <section class="how-it-works">
+    <h2 data-i18n="how_it_works">Cómo funciona</h2>
     <div class="steps">
-      <div class="step"><img src="assets/img/foto-1-cliente-resena.png" alt="Cliente acercando el móvil al stand" width="360" height="540" loading="lazy"><strong data-i18n="how_1_t">Acerca el móvil al stand NFC</strong></div>
-      <div class="step"><img src="assets/img/foto-7-extra.png" alt="Se abre la página de reseñas" width="360" height="540" loading="lazy"><strong data-i18n="how_2_t">Se abre la página de reseñas de Google</strong></div>
-      <div class="step"><img src="assets/img/foto-5-mostrador.png" alt="Stand en mostrador real" width="360" height="540" loading="lazy"><strong data-i18n="how_3_t">Deja la reseña</strong></div>
-    </div>
-    <div style="margin-top:18px">
-      <h3 data-i18n="demo_title">Demostración</h3>
-      <img src="assets/img/foto-7-extra.png" width="1200" height="1800" alt="Demostración del tap NFC" loading="lazy">
-    </div>
-  </section>
-
-  <section class="wrap section" id="details">
-    <h2 data-i18n="details_title">Detalles / Especificaciones</h2>
-    <div class="product">
-      <div><img src="assets/img/foto-3-producto-trasera.png" alt="Producto parte trasera" width="600" height="900" loading="lazy"></div>
-      <div>
-        <table class="table">
-          <tbody>
-            <tr><th data-i18n="material">Material</th><td data-i18n="material_val">PVC</td></tr>
-            <tr><th data-i18n="chip">Chip NFC</th><td data-i18n="chip_val">NTAG213</td></tr>
-            <tr><th data-i18n="dimensions">Dimensiones</th><td data-i18n="dimensions_val">125×75+50 mm</td></tr>
-            <tr><th>—</th><td data-i18n="dimensions_breakdown">Cuerpo 125×75 mm · Base 125×50 mm (aprox.)</td></tr>
-            <tr><th data-i18n="compat">Compatibilidad</th><td data-i18n="compat_val">iPhone 7+ y Android con NFC activado</td></tr>
-            <tr><th data-i18n="shipping">Envío</th><td data-i18n="shipping_val">24/48 h desde España</td></tr>
-          </tbody>
-        </table>
+      <div class="step">
+        <img src="/assets/img/paso-1-tap.jpg" alt="Cliente acerca el móvil al stand NFC" loading="lazy">
+        <p>Acerca el móvil al stand NFC</p>
+      </div>
+      <div class="step">
+        <img src="/assets/img/paso-2-abrir-resenas.jpg" alt="Se abre la página de reseñas de Google" loading="lazy">
+        <p>Se abre la página de reseñas de Google</p>
+      </div>
+      <div class="step">
+        <img src="/assets/img/paso-3-mostrador.jpg" alt="Cliente deja la reseña" loading="lazy">
+        <p>Deja la reseña</p>
       </div>
     </div>
   </section>
 
-  <section class="wrap section" id="support">
-    <h2 data-i18n="support_title">Atención al cliente</h2>
-    <div class="support">
-      <div class="big" data-i18n="support_promise">La mejor atención al cliente. Si no respondemos a tu llamada o WhatsApp en 2 minutos, te regalamos un stand NFC gratis con tu compra (1 o más unidades).</div>
-      <div class="cta"><a class="btn btn-primary" data-checkout data-i18n="cta_buy" href="#">Comprar ahora</a>
-      <a class="btn btn-ghost" data-whatsapp data-i18n="cta_whatsapp" href="#" target="_blank" rel="noopener">Hablar por WhatsApp</a></div>
-    </div>
+  <!-- Especificaciones -->
+  <section class="details">
+    <h2>Detalles del producto</h2>
+    <ul>
+      <li>Material: PVC</li>
+      <li>Chip NFC: NTAG213</li>
+      <li>Dimensiones: 125×75+50 mm (cuerpo + base)</li>
+      <li>Compatibilidad: iPhone 7+ y Android con NFC activado</li>
+      <li>Incluye: stand, guía rápida, soporte por WhatsApp</li>
+      <li>Envío: 24/48 h desde España</li>
+    </ul>
+    <img src="/assets/img/detalle-trasera.jpg" alt="Vista trasera del stand NFC" loading="lazy">
+    <img src="/assets/img/comparativa-movil.jpg" alt="Comparativa de tamaño del stand junto a un móvil" loading="lazy">
   </section>
 
-  <section class="wrap section" id="proof">
-    <h2 data-i18n="testimonials_title">Pruebas sociales</h2>
-    <div class="testimonials">
-      <div class="testimonial"><p data-i18n="testimonial_1">“Funciona perfecto. En dos días subieron nuestras reseñas.”</p></div>
-      <div class="testimonial"><p data-i18n="testimonial_2">“Muy fácil de usar por los clientes.”</p></div>
-      <div class="testimonial"><p data-i18n="testimonial_3">“Instalación inmediata en el mostrador.”</p></div>
-    </div>
-    <div class="clients" style="margin-top:16px">
-      <img src="assets/img/foto-5-mostrador.png" width="160" height="240" alt="Cliente 1" loading="lazy">
-      <img src="assets/img/foto-6-comparativa.png" width="160" height="240" alt="Cliente 2" loading="lazy">
-      <img src="assets/img/foto-2-producto-frontal.png" width="160" height="240" alt="Cliente 3" loading="lazy">
-    </div>
+  <!-- Atención al cliente -->
+  <section class="support">
+    <h2>Atención al cliente</h2>
+    <p>La mejor atención al cliente. Si no respondemos a tu llamada o WhatsApp en 2 minutos, te regalamos un stand NFC gratis con tu compra (1 o más unidades).</p>
+    <a href="https://wa.me/34690232999?text=Hola!%20Me%20interesa%20el%20stand%20NFC%20🙌%20Voy%20a%20poner%20a%20prueba%20vuestro%20récord%20de%20respuesta%20de%202%20minutos%20😉" class="btn whatsapp" target="_blank">Escríbenos por WhatsApp</a>
   </section>
 
-  <section class="wrap section" id="faq">
-    <h2 data-i18n="faq_title">Preguntas frecuentes</h2>
-    <dl class="faq">
-      <dt data-faq data-i18n="faq_q1">¿Compatibilidad?</dt><dd data-i18n="faq_a1">iPhone 7 o superior y la mayoría de Android con NFC activado.</dd>
-      <dt data-faq data-i18n="faq_q2">¿Cómo configuro mi enlace de reseñas?</dt><dd data-i18n="faq_a2">Tras la compra recibirás un formulario para pegar la URL exacta de reseñas de tu ficha de Google.</dd>
-      <dt data-faq data-i18n="faq_q3">¿Envío?</dt><dd data-i18n="faq_a3">Preparación en 24 h laborables. Entrega habitual 24/48 h.</dd>
-      <dt data-faq data-i18n="faq_q4">¿Atención en 2 minutos?</dt><dd data-i18n="faq_a4">Sí. Si no respondemos llamada o WhatsApp en 2 minutos, añadimos un stand NFC gratis a tu pedido.</dd>
-    </dl>
+  <!-- Testimonios -->
+  <section class="testimonials">
+    <h2>Lo que dicen nuestros clientes</h2>
+    <div class="testimonial">⭐⭐⭐⭐⭐ “Muy fácil de usar y los clientes dejan reseñas sin problema.”</div>
+    <div class="testimonial">⭐⭐⭐⭐⭐ “Envío rápido y buena atención.”</div>
+    <div class="testimonial">⭐⭐⭐⭐⭐ “Ideal para mi negocio, ya tengo más reseñas en Google.”</div>
   </section>
 
-  <footer>
-    <div class="wrap footgrid">
-      <div><strong>LOGO</strong><p class="small" data-i18n="includes">Incluye: stand, guía rápida, soporte por WhatsApp.</p></div>
-      <div><strong data-i18n="legal_title">Legal</strong><ul>
-        <li><a href="legal/aviso-legal.html" data-i18n="legal_aviso">Aviso legal</a></li>
-        <li><a href="legal/privacidad.html" data-i18n="legal_priv">Privacidad</a></li>
-        <li><a href="legal/cookies.html" data-i18n="legal_cookies">Cookies</a></li>
-        <li><a href="legal/terminos.html" data-i18n="legal_terms">Términos y condiciones</a></li>
-        <li><a href="legal/devoluciones-garantia.html" data-i18n="legal_returns">Devoluciones/Garantía</a></li>
-      </ul></div>
-      <div><strong data-i18n="contact_title">Contacto</strong><ul>
-        <li><span data-i18n="contact_email">Email: [EMAIL_PLACEHOLDER]</span></li>
-        <li><span data-i18n="contact_nif">NIF: [NIF_PLACEHOLDER]</span></li>
-      </ul></div>
-      <div><strong data-i18n="social_title">Redes</strong><ul>
-        <li><a href="#" aria-label="Instagram">Instagram</a></li>
-        <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
-        <li><a href="#" aria-label="YouTube">YouTube</a></li>
-      </ul></div>
-    </div>
+  <!-- FAQ -->
+  <section class="faq">
+    <h2>Preguntas frecuentes</h2>
+    <details>
+      <summary>¿Es compatible con mi móvil?</summary>
+      <p>Sí, funciona con iPhone 7 en adelante y cualquier Android con NFC activado.</p>
+    </details>
+    <details>
+      <summary>¿Cómo se configura?</summary>
+      <p>Nosotros lo enviamos listo para usar con tu enlace de reseñas de Google.</p>
+    </details>
+    <details>
+      <summary>¿Cuánto tarda el envío?</summary>
+      <p>Entre 24 y 48 horas dentro de España.</p>
+    </details>
+    <details>
+      <summary>¿Qué pasa si no respondéis?</summary>
+      <p>Si no respondemos a tu llamada o WhatsApp en 2 minutos, te regalamos un stand NFC gratis.</p>
+    </details>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <nav>
+      <a href="/legal/aviso-legal.html">Aviso legal</a> |
+      <a href="/legal/privacidad.html">Privacidad</a> |
+      <a href="/legal/cookies.html">Cookies</a> |
+      <a href="/legal/terminos.html">Términos y condiciones</a> |
+      <a href="/legal/devoluciones-garantia.html">Devoluciones y garantía</a>
+    </nav>
+    <p>© 2025 Reviply · NIF: X00000000</p>
+    <p>Síguenos en redes sociales [placeholders]</p>
   </footer>
 
-  <a class="whatsapp-float" data-whatsapp aria-label="WhatsApp" href="#" target="_blank" rel="noopener">
-    <img src="assets/img/foto-6-comparativa.png" alt="" style="display:none">
-    <!-- using vector omitted, button background green already -->
-    <span style="font-size:0">WhatsApp</span>
+  <!-- Botón flotante WhatsApp -->
+  <a href="https://wa.me/34690232999?text=Hola!%20Me%20interesa%20el%20stand%20NFC%20🙌%20Voy%20a%20poner%20a%20prueba%20vuestro%20récord%20de%20respuesta%20de%202%20minutos%20😉" 
+     class="whatsapp-float" aria-label="Hablar por WhatsApp" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="50">
   </a>
+
+  <script src="/scripts/script.js"></script>
 </body>
 </html>
