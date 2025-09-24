@@ -8,13 +8,14 @@
   <link rel="stylesheet" href="/styles/styles.css">
 </head>
 <body>
+
   <!-- Barra superior -->
   <div class="top-bar">
     <span>Envío gratis · Pago seguro con Stripe</span>
   </div>
 
   <!-- Header -->
-  <header class="header">
+  <header>
     <div class="logo">LOGO</div>
     <div class="lang-switch">
       <button onclick="setLang('es')">ES</button> | 
@@ -27,11 +28,13 @@
     <h1 data-i18n="hero_title">Stand NFC para reseñas en Google</h1>
     <p data-i18n="hero_subtitle">Acerca el móvil y se abre tu enlace de reseñas.</p>
     <p class="price">Precio: 19 €</p>
-    <div class="hero-cta">
-      <a href="[STRIPE_PAYMENT_LINK]" class="btn primary" data-i18n="buy_now">Comprar ahora</a>
-      <a href="https://wa.me/34690232999?text=Hola!%20Me%20interesa%20el%20stand%20NFC%20🙌%20Voy%20a%20poner%20a%20prueba%20vuestro%20récord%20de%20respuesta%20de%202%20minutos%20😉" class="btn secondary" target="_blank">Hablar por WhatsApp</a>
+    <div class="cta-buttons">
+      <a href="https://buy.stripe.com/7sY5kF0JN2GU1KR3AEeEo05" class="cta-primary">Comprar ahora</a>
+      <a href="https://wa.me/34690232999?text=Hola!%20Me%20interesa%20el%20stand%20NFC%20🙌%20Voy%20a%20poner%20a%20prueba%20vuestro%20récord%20de%20respuesta%20de%202%20minutos%20😉" class="cta-secondary" target="_blank">Hablar por WhatsApp</a>
     </div>
-    <img src="/assets/img/hero-producto.jpg" alt="Foto frontal del stand NFC" loading="lazy">
+    <div class="img-section">
+      <img src="/assets/img/hero-producto.jpg" alt="Foto frontal del stand NFC" loading="lazy">
+    </div>
   </section>
 
   <!-- Barra de confianza -->
@@ -40,8 +43,8 @@
   </section>
 
   <!-- Cómo funciona -->
-  <section class="how-it-works">
-    <h2 data-i18n="how_it_works">Cómo funciona</h2>
+  <section class="how-it-works container">
+    <h2>Cómo funciona</h2>
     <div class="steps">
       <div class="step">
         <img src="/assets/img/paso-1-tap.jpg" alt="Cliente acerca el móvil al stand NFC" loading="lazy">
@@ -59,7 +62,7 @@
   </section>
 
   <!-- Especificaciones -->
-  <section class="details">
+  <section class="details container">
     <h2>Detalles del producto</h2>
     <ul>
       <li>Material: PVC</li>
@@ -69,19 +72,21 @@
       <li>Incluye: stand, guía rápida, soporte por WhatsApp</li>
       <li>Envío: 24/48 h desde España</li>
     </ul>
-    <img src="/assets/img/detalle-trasera.jpg" alt="Vista trasera del stand NFC" loading="lazy">
-    <img src="/assets/img/comparativa-movil.jpg" alt="Comparativa de tamaño del stand junto a un móvil" loading="lazy">
+    <div class="img-section">
+      <img src="/assets/img/detalle-trasera.jpg" alt="Vista trasera del stand NFC" loading="lazy">
+      <img src="/assets/img/comparativa-movil.jpg" alt="Comparativa de tamaño del stand junto a un móvil" loading="lazy">
+    </div>
   </section>
 
   <!-- Atención al cliente -->
-  <section class="support">
+  <section class="support container">
     <h2>Atención al cliente</h2>
     <p>La mejor atención al cliente. Si no respondemos a tu llamada o WhatsApp en 2 minutos, te regalamos un stand NFC gratis con tu compra (1 o más unidades).</p>
-    <a href="https://wa.me/34690232999?text=Hola!%20Me%20interesa%20el%20stand%20NFC%20🙌%20Voy%20a%20poner%20a%20prueba%20vuestro%20récord%20de%20respuesta%20de%202%20minutos%20😉" class="btn whatsapp" target="_blank">Escríbenos por WhatsApp</a>
+    <a href="https://wa.me/34690232999?text=Hola!%20Me%20interesa%20el%20stand%20NFC%20🙌%20Voy%20a%20poner%20a%20prueba%20vuestro%20récord%20de%20respuesta%20de%202%20minutos%20😉" class="cta-secondary" target="_blank">Escríbenos por WhatsApp</a>
   </section>
 
   <!-- Testimonios -->
-  <section class="testimonials">
+  <section class="testimonials container">
     <h2>Lo que dicen nuestros clientes</h2>
     <div class="testimonial">⭐⭐⭐⭐⭐ “Muy fácil de usar y los clientes dejan reseñas sin problema.”</div>
     <div class="testimonial">⭐⭐⭐⭐⭐ “Envío rápido y buena atención.”</div>
@@ -89,7 +94,7 @@
   </section>
 
   <!-- FAQ -->
-  <section class="faq">
+  <section class="faq container">
     <h2>Preguntas frecuentes</h2>
     <details>
       <summary>¿Es compatible con mi móvil?</summary>
@@ -97,7 +102,7 @@
     </details>
     <details>
       <summary>¿Cómo se configura?</summary>
-      <p>Nosotros lo enviamos listo para usar con tu enlace de reseñas de Google.</p>
+      <p>Lo enviamos listo para usar con tu enlace de reseñas de Google.</p>
     </details>
     <details>
       <summary>¿Cuánto tarda el envío?</summary>
@@ -110,7 +115,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer>
     <nav>
       <a href="/legal/aviso-legal.html">Aviso legal</a> |
       <a href="/legal/privacidad.html">Privacidad</a> |
@@ -123,9 +128,9 @@
   </footer>
 
   <!-- Botón flotante WhatsApp -->
-  <a href="https://wa.me/34690232999?text=Hola!%20Me%20interesa%20el%20stand%20NFC%20🙌%20Voy%20a%20poner%20a%20prueba%20vuestro%20récord%20de%20respuesta%20de%202%20minutos%20😉" 
+  <a href="https://wa.me/34690232999?text=Hola!%20Me%20interesa%20el%20stand%20NFC%20🙌%20Voy%20a%20poner%20a%20prueba%20vuestro%20récord%20de%20respuesta%20de%202%20minutos%20😉"
      class="whatsapp-float" aria-label="Hablar por WhatsApp" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="50">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="40">
   </a>
 
   <script src="/scripts/script.js"></script>
